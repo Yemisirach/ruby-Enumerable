@@ -18,11 +18,11 @@ class MyList
   end
 end
 
-list = MyList.new(1, 2, 3, 4, 5, 6)
+list = MyList.new(1, 2, 3, 4)
 # Test #all?
-result = list.all? { |e| e < 7 } # true
+result = list.all? { |e| e < 5 } # true
 puts result
-result = list.all? { |e| e > 7 } # false
+result = list.all? { |e| e > 5 } # false
 puts result
 result = list.all? # true
 puts result
