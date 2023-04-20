@@ -1,4 +1,4 @@
-require_relative 'myEnumerable'
+require_relative 'my_enumerable'
 
 class MyList
   include Enumerable
@@ -18,7 +18,7 @@ class MyList
   end
 end
 
-list = MyList.new(1, 2, 3, 4,5,6)
+list = MyList.new(1, 2, 3, 4, 5, 6)
 # Test #all?
 result = list.all? { |e| e < 7 } # true
 puts result
